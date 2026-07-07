@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80" role="img" aria-labelledby="title">
+  <title id="title">高齢者とご家族の安心相談窓口</title>
+  <rect width="240" height="80" rx="8" fill="#fffdf7"/>
+  <circle cx="40" cy="40" r="24" fill="#16483a"/>
+  <text x="40" y="49" text-anchor="middle" font-family="Yu Gothic, Meiryo, sans-serif" font-size="24" font-weight="700" fill="#ffffff">安</text>
+  <text x="76" y="35" font-family="Yu Gothic, Meiryo, sans-serif" font-size="16" font-weight="700" fill="#16483a">高齢者とご家族の</text>
+  <text x="76" y="57" font-family="Yu Gothic, Meiryo, sans-serif" font-size="16" font-weight="700" fill="#172d44">安心相談窓口</text>
+</svg>

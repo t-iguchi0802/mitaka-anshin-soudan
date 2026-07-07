@@ -1,0 +1,38 @@
+[
+  {
+    "date": "2026-06-17",
+    "category": "住まいの点検",
+    "title": "浴室暖房付き換気扇の分解洗浄を行いました",
+    "summary": "普段はフィルター清掃のみだった浴室暖房付き換気扇を分解し、内部のファンまで洗浄しました。汚れの状態と洗浄後の様子を写真で記録しています。",
+    "image": "assets/activities/bath-fan-clean-installed.jpg?v=20260707",
+    "alt": "洗浄後に浴室暖房付き換気扇へファンを戻した状態",
+    "url": "activities/2026-06-activity-001.html"
+  },
+  {
+    "date": "2026-07-02",
+    "category": "地域活動",
+    "title": "高齢者給食・安否確認サービスに参加しました",
+    "summary": "給食ボランティアの1年の区切りとして、支えてきた皆さんと食事会をしました。省力化と人の手をかける見守りの両方の大切さを感じています。",
+    "image": "assets/activities/volunteer-dinner-2026.jpg?v=20260707",
+    "alt": "給食ボランティアの食事会で撮影した集合写真のイラスト加工画像",
+    "url": "activities/2026-07-activity-001.html"
+  },
+  {
+    "date": "2026-07-05",
+    "category": "空き家・住まい",
+    "title": "空き家の雑草除去を行いました",
+    "summary": "建物まわりと裏手の雑草を整理し、通路や外まわりの状態が確認しやすくなりました。作業前後の写真で変化を記録しています。",
+    "image": "assets/activities/vacant-weeding-path-after.jpg?v=20260707",
+    "alt": "雑草除去後に通路が確認しやすくなった建物まわり",
+    "url": "activities/2026-07-activity-002.html"
+  },
+  {
+    "date": "2026-07-08",
+    "category": "相続・家族会議",
+    "title": "家族で話す前に、まず整理しておきたいこと",
+    "summary": "相続や実家の今後について、家族で話し合う前に確認しておきたい基本項目をまとめました。",
+    "image": "assets/images/consultation-table.jpg?v=20260707",
+    "alt": "相談内容を整理するためのテーブルと書類",
+    "url": "activities/2026-07-activity-003.html"
+  }
+]
