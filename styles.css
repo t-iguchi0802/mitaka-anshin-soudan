@@ -100,6 +100,14 @@ img {
   background: var(--green);
 }
 
+.brand-text {
+  display: inline;
+}
+
+.brand-text span {
+  display: inline;
+}
+
 .operator {
   color: var(--muted);
   font-size: 13px;
@@ -321,7 +329,29 @@ p {
 .profile-name a,
 .inline-link {
   color: var(--green);
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
   text-underline-offset: 4px;
+}
+
+.trust-list a,
+.qualification-grid a {
+  border-color: rgba(22, 72, 58, 0.34);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 8px 18px rgba(23, 45, 68, 0.08);
+}
+
+.trust-list a:hover,
+.trust-list a:focus-visible,
+.qualification-grid a:hover,
+.qualification-grid a:focus-visible,
+.profile-name a:hover,
+.profile-name a:focus-visible,
+.inline-link:hover,
+.inline-link:focus-visible {
+  color: var(--navy);
+  background: rgba(245, 239, 227, 0.96);
 }
 
 .cta-row {
@@ -656,7 +686,7 @@ p {
   display: grid;
   gap: 8px;
   margin: 16px 0;
-  padding-left: 1.2em;
+  padding-left: 1.65em;
 }
 
 .caution-box > p {
@@ -664,7 +694,7 @@ p {
 }
 
 .caution-box li {
-  padding-left: 2px;
+  padding-left: 8px;
 }
 
 .caution-note {
@@ -941,6 +971,16 @@ tr:last-child td {
   text-decoration: none;
 }
 
+.phone-sub {
+  display: block;
+  width: fit-content;
+  margin: -4px auto 12px;
+  color: var(--muted);
+  font-size: clamp(18px, 4vw, 24px);
+  font-weight: 800;
+  text-decoration: none;
+}
+
 .site-footer {
   padding: 34px 0;
   color: var(--white);
@@ -1204,6 +1244,17 @@ tr:last-child td {
     width: min(100% - 28px, 1120px);
   }
 
+  .brand {
+    gap: 8px;
+    font-size: 14px;
+    line-height: 1.25;
+  }
+
+  .brand-text,
+  .brand-text span {
+    display: block;
+  }
+
   .button {
     width: 100%;
   }
@@ -1223,6 +1274,60 @@ tr:last-child td {
 
   .trust-list {
     margin: 16px 0;
+  }
+
+  #activities {
+    padding-top: 34px;
+  }
+
+  #activities .section-heading {
+    margin-bottom: 14px;
+  }
+
+  #activities .section-heading p:not(.eyebrow) {
+    display: none;
+  }
+
+  .activity-grid {
+    gap: 8px;
+  }
+
+  .activity-card {
+    display: grid;
+    grid-template-columns: 78px minmax(0, 1fr);
+    min-height: 112px;
+  }
+
+  .activity-media {
+    min-height: 100%;
+    aspect-ratio: auto;
+  }
+
+  .activity-body {
+    min-width: 0;
+    padding: 8px 11px;
+  }
+
+  .activity-meta {
+    gap: 5px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .activity-card h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    line-height: 1.32;
+  }
+
+  .activity-card p {
+    display: none;
+  }
+
+  .activity-card .text-link {
+    display: inline-flex;
+    font-size: 14px;
   }
 
   .hero-visual {

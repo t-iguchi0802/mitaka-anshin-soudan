@@ -104,7 +104,9 @@ async function renderActivities() {
     activitiesContainer.textContent = "";
     latest.forEach((activity) => activitiesContainer.append(createActivityCard(activity)));
   } catch (error) {
-    activitiesContainer.innerHTML = '<p class="loading">活動記録を読み込めませんでした。時間をおいて再度ご確認ください。</p>';
+    if (!activitiesContainer.querySelector(".activity-card")) {
+      activitiesContainer.innerHTML = '<p class="loading">活動記録を読み込めませんでした。時間をおいて再度ご確認ください。</p>';
+    }
   }
 }
 
