@@ -1049,6 +1049,27 @@ tr:last-child td {
   margin-left: auto;
 }
 
+.activity-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 2rem 0 3rem;
+}
+
+.activity-photo-grid figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.activity-photo-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .before-after-section {
   margin-top: 36px;
 }
@@ -1348,6 +1369,11 @@ tr:last-child td {
 
   .article-main-photo--compact {
     width: 100%;
+  }
+
+  .activity-photo-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .comparison-grid {
