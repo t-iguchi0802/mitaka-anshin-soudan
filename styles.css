@@ -8,6 +8,7 @@
   --cream: #f5efe3;
   --beige: #e8dcc8;
   --line: #d8cbb7;
+  --accent: #b56f3b;
   --white: #ffffff;
   --shadow: 0 18px 48px rgba(23, 45, 68, 0.12);
 }
@@ -189,7 +190,7 @@ img {
 
 .hero::before {
   inset: 0;
-  opacity: 0.38;
+  opacity: 0.18;
   background-image:
     linear-gradient(rgba(22, 72, 58, 0.055) 1px, transparent 1px),
     linear-gradient(90deg, rgba(22, 72, 58, 0.045) 1px, transparent 1px);
@@ -220,7 +221,7 @@ img {
 .hero-copy {
   max-width: 640px;
   padding: 24px 28px 26px;
-  border-left: 5px solid var(--green);
+  border-left: 5px solid var(--accent);
   border-radius: 0 12px 12px 0;
   background: rgba(255, 253, 247, 0.94);
   box-shadow: 0 14px 34px rgba(23, 45, 68, 0.08);
@@ -228,7 +229,7 @@ img {
 
 .eyebrow {
   margin: 0 0 10px;
-  color: var(--green-2);
+  color: var(--accent);
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0;
@@ -262,7 +263,7 @@ h1 {
 
 .hero-consultant {
   margin: 14px 0 16px;
-  color: var(--green);
+  color: var(--navy);
   font-size: clamp(19px, 2.2vw, 25px);
   font-weight: 800;
   line-height: 1.45;
@@ -455,14 +456,14 @@ p {
 
 .panel-kicker {
   margin: 0 0 12px;
-  color: var(--green);
+  color: var(--accent);
   font-size: 14px;
   font-weight: 800;
 }
 
 .panel-main {
   margin: 0;
-  color: var(--green);
+  color: var(--navy);
   font-family: var(--serif);
   font-size: clamp(25px, 2.45vw, 36px);
   font-weight: 800;
@@ -470,29 +471,20 @@ p {
   letter-spacing: 0;
 }
 
-.panel-namecard {
-  margin-top: clamp(24px, 3vw, 34px);
-  padding: 22px 24px;
-  border: 1px solid rgba(22, 72, 58, 0.16);
-  border-left: 7px solid var(--green);
-  border-radius: 8px;
-  background:
-    linear-gradient(90deg, rgba(22, 72, 58, 0.06), transparent 40%),
-    var(--white);
+.panel-points {
+  display: grid;
+  gap: 10px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
 }
 
-.panel-namecard span {
-  display: block;
-  margin-bottom: 12px;
-  color: var(--green);
-  font-size: 14px;
-  font-weight: 800;
-}
-
-.panel-namecard strong {
+.panel-points li {
+  padding: 12px 14px 12px 20px;
+  border-left: 4px solid var(--accent);
   color: var(--navy);
-  font-size: clamp(21px, 2vw, 28px);
-  line-height: 1.35;
+  background: rgba(255, 255, 255, 0.82);
+  font-weight: 800;
 }
 
 .panel-tags {
