@@ -219,6 +219,11 @@ img {
 
 .hero-copy {
   max-width: 640px;
+  padding: 24px 28px 26px;
+  border-left: 5px solid var(--green);
+  border-radius: 0 12px 12px 0;
+  background: rgba(255, 253, 247, 0.94);
+  box-shadow: 0 14px 34px rgba(23, 45, 68, 0.08);
 }
 
 .eyebrow {
@@ -258,7 +263,7 @@ h1 {
 .hero-consultant {
   margin: 14px 0 16px;
   color: var(--green);
-  font-size: clamp(18px, 2vw, 22px);
+  font-size: clamp(19px, 2.2vw, 25px);
   font-weight: 800;
   line-height: 1.45;
 }
@@ -1291,6 +1296,11 @@ tr:last-child td {
   .hero-message {
     margin-top: 14px;
     padding: 12px 14px;
+  }
+
+  .hero-copy {
+    padding: 20px 18px 22px;
+    border-left-width: 4px;
   }
 
   .trust-list {
