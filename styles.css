@@ -462,8 +462,8 @@ p {
 
 .panel-points {
   display: grid;
-  gap: 0;
-  margin: 24px 0 0;
+  gap: 9px;
+  margin: 28px 0 0;
   padding: 0;
   list-style: none;
   counter-reset: panel-point;
@@ -473,14 +473,12 @@ p {
   display: grid;
   grid-template-columns: 38px minmax(0, 1fr);
   align-items: center;
-  padding: 14px 0;
-  border-top: 1px solid var(--line);
-  color: var(--navy);
-  font-weight: 800;
-}
-
-.panel-points li:last-child {
-  border-bottom: 1px solid var(--line);
+  min-height: 66px;
+  padding: 10px 14px 10px 12px;
+  border: 1px solid rgba(22, 72, 58, 0.12);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(245, 239, 227, 0.72), rgba(255, 255, 255, 0.82));
 }
 
 .panel-points li::before {
@@ -491,6 +489,24 @@ p {
   font-size: 15px;
   font-weight: 800;
   letter-spacing: 0.08em;
+}
+
+.panel-point-copy {
+  display: grid;
+  gap: 1px;
+}
+
+.panel-point-copy strong {
+  color: var(--navy);
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.panel-point-copy small {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.35;
 }
 
 .panel-tags {
