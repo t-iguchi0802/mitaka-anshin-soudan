@@ -261,6 +261,15 @@ h1 {
   display: block;
 }
 
+.hero-subtitle {
+  margin: 8px 0 18px;
+  color: var(--navy);
+  font-family: var(--serif);
+  font-size: clamp(24px, 2.8vw, 34px);
+  font-weight: 800;
+  line-height: 1.35;
+}
+
 .hero-consultant {
   margin: 14px 0 16px;
   color: var(--navy);
@@ -1301,6 +1310,11 @@ tr:last-child td {
 
   .hero-title {
     font-size: clamp(28px, 8vw, 33px);
+  }
+
+  .hero-subtitle {
+    margin-top: 4px;
+    font-size: clamp(21px, 6vw, 27px);
   }
 
   .hero-consultant {
