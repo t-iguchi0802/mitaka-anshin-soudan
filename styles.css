@@ -800,11 +800,6 @@ p {
   object-position: center 42%;
 }
 
-.profile-download {
-  align-self: end;
-  margin-top: -8px;
-}
-
 .profile-name {
   display: grid;
   gap: 6px;
