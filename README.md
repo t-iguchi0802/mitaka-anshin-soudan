@@ -1,19 +1,26 @@
-# 高齢者とご家族の安心相談窓口
+# みたか暮らし相談室
 
-三鷹市周辺で、見守り・空き家・住まい・相続の入口相談を確認できる静的サイトです。名刺、手紙、紹介を受け取った方や、遠方のご家族が活動実態と連絡先を確認できる受け皿として作成しています。
+三鷹市周辺で、暮らしの困りごとを相談から実際の対応までお手伝いする、株式会社サンアローズ運営の民間サービスの静的サイトです。三鷹市内のスマホ相談は無料です。名刺、手紙、紹介を受け取った方や、遠方のご家族が活動実態と連絡先を確認できる受け皿として作成しています。
+
+## ローカルでの確認
+
+改修中はローカルファイルのみを編集し、commit・push・deployは行いません。
+
+リポジトリのルートで以下を実行し、http://localhost:8765/ を開きます。
+
+    python -m http.server 8765 --bind 127.0.0.1
+
+記事一覧は http://localhost:8765/activities/index.html です。ローカルサーバー起動中、同じPCから確認できます。
 
 ## 公開方法
 
-Cloudflare Pages で新規プロジェクトとして公開します。
+本番は GitHub Pages で公開しています。
 
 - GitHub repository: `t-iguchi0802/mitaka-anshin-soudan`
-- Project name: `mitaka-anshin-soudan`
-- Framework preset: `None`
-- Build command: 空欄
-- Build output directory: `/`
-- Production branch: `main`
+- 公開元: `gh-pages` ブランチの `/`
+- 公開URL: `https://t-iguchi0802.github.io/mitaka-anshin-soudan/`
 
-既存の `sunarrows-consulting-site`、`sunarrows-tky.co.jp`、Netlify、STUDIO は使いません。
+変更は `main` に反映した後、確認済みの同じコミットを `gh-pages` に反映します。公開後は本番URLと主要ページを実際に確認してください。
 
 ## 電話番号・フォームURLの変更
 
@@ -22,7 +29,7 @@ Cloudflare Pages で新規プロジェクトとして公開します。
 - フォームURLは `index.html` のお問い合わせセクションにある `href="#"` を GoogleフォームURLへ差し替えます。
 - 料金表や「三鷹市内は交通費をいただいていません」の補足を変更する場合は、`index.html` の料金セクションを編集します。
 
-## 活動記録の更新
+## 暮らしの相談・活動ブログの更新
 
 `activities.json` に活動記録を追加します。トップページには日付降順で最新3件が表示されます。
 
