@@ -1113,7 +1113,20 @@ tr:last-child td {
 
 .article-main-photo img {
   width: 100%;
+  height: auto;
   display: block;
+}
+
+.article-photo-credit {
+  margin: 0;
+  padding: 8px 12px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: right;
+}
+
+.article-photo-credit a {
+  color: inherit;
 }
 
 .article-main-photo--compact {
